@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF3EFFF0-F1D3-4659-916F-82022F0C86A7}</ProjectGuid>
+    <Description>Binding library of Facebook.Shimmer library for Xamarin.Android and Xamarin.iOS</Description>
+    <PackageId>Xamarin.Facebook.Shimmer</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Josué Díaz</Authors>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Xamarin.Facebook.Shimmer</RootNamespace>
+    <UsePartialTypes>false</UsePartialTypes>
+    <AssemblyName>Xamarin.Facebook.Shimmer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <Owners>Josué Díaz</Owners>
+    <Copyright>Copyright Josué Díaz © 2018</Copyright>
+    <PackageTags>Xamarin Facebook Shimmer Xamarin.iOS Xamarin.Android Droid Animation Animations Placeholder Loading</PackageTags>
+    <Title>Xamarin.Facebook.Shimmer</Title>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Summary>Binding library of Facebook.Shimmer library for Xamarin.Android and Xamarin.iOS</Summary>
+    <PackageProjectUrl>https://github.com/JosueDM94/Xamarin.Facebook.Shimmer</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/xamarin/FacebookComponents/master/icons/facebook-android_128x128.png</PackageIconUrl>
+    <PackageLicenseUrl>https://github.com/JosueDM94/Xamarin.Facebook.Shimmer/blob/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <OutputPath>bin\Debug</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging">
+      <Version>0.2.2</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xamarin.Facebook.Shimmer.Android\Xamarin.Facebook.Shimmer.Android.csproj">
+      <Project>{390FF78F-85DD-4DC3-A4B4-2C3E3F68C028}</Project>
+      <Name>Xamarin.Facebook.Shimmer.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xamarin.Facebook.Shimmer.iOS\Xamarin.Facebook.Shimmer.iOS.csproj">
+      <Project>{71289F40-898C-4B1A-9046-BE11B62270A7}</Project>
+      <Name>Xamarin.Facebook.Shimmer.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+</Project>
