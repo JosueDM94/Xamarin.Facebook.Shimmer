@@ -7,7 +7,7 @@ using CoreAnimation;
 namespace Facebook.Shimmer
 {
     // @protocol FBShimmering <NSObject>
-    [Model]
+    [Protocol, Model]
     [BaseType(typeof(NSObject))]
     interface FBShimmering
     {
@@ -40,7 +40,6 @@ namespace Facebook.Shimmer
         [Abstract]
         [Export("shimmeringHighlightLength")]
         nfloat ShimmeringHighlightLength { get; set; }
-
 
         //TODO Find fix for selector issue
         // @required @property (getter = shimmeringHighlightLength, assign, readwrite, nonatomic, setter = setShimmeringHighlightLength:) CGFloat shimmeringHighlightWidth;
