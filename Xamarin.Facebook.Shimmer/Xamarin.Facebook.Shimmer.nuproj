@@ -7,7 +7,7 @@
     <ProjectGuid>{FF3EFFF0-F1D3-4659-916F-82022F0C86A7}</ProjectGuid>
     <Description>Binding library of Facebook.Shimmer library for Xamarin.Android and Xamarin.iOS</Description>
     <PackageId>Xamarin.Facebook.Shimmer</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Josué Díaz</Authors>
     <DevelopmentDependency>true</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -25,6 +25,7 @@
     <PackageProjectUrl>https://github.com/JosueDM94/Xamarin.Facebook.Shimmer</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/xamarin/FacebookComponents/master/icons/facebook-android_128x128.png</PackageIconUrl>
     <PackageLicenseUrl>https://github.com/JosueDM94/Xamarin.Facebook.Shimmer/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>See: https://github.com/JosueDM94/Xamarin.Facebook.Shimmer</PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
