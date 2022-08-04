@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Xamarin.Facebook.Shimmer</id>
+    <version>1.0.2</version>
+    <title>Xamarin.Facebook.Shimmer</title>
+    <authors>Josué Díaz</authors>
+    <owners>Josué Díaz</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>icon.png</icon>
+    <license type="file">LICENSE</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>https://github.com/JosueDM94/Xamarin.Facebook.Shimmer</projectUrl>
+    <description>Set of Xamarin bindings of Facebook Shimmer for Xamarin.Android and Xamarin.iOS</description>
+    <summary>Set of Xamarin bindings of Facebook Shimmer for Xamarin.Android and Xamarin.iOS</summary>
+    <releaseNotes>Support AndroidX packages:
+[iOS] Xamarin.Facebook.Shimmer 1.0.2
+[Android] Xamarin.Facebook.Shimmer 0.5.0</releaseNotes>
+    <copyright>Copyright Josué Díaz © 2022</copyright>
+    <language>en-US</language>
+    <tags>xamarin, ios, android, facebook, shimmer, animations, placeholder, loading</tags>
+    <readme>README.md</readme>
+    <repository type="git" url="https://github.com/JosueDM94/Xamarin.Facebook.Shimmer" />
+    <developmentDependency>false</developmentDependency>
+    <dependencies>
+      <group targetFramework="MonoAndroid11.0">
+        <!--MonoAndroid dependencies go here-->
+        <dependency id="Xamarin.AndroiX.Annotation" version="1.0.2.1" />
+      </group>
+      <group targetFramework="Xamarin.iOS1.0">
+          <!--Xamarin.iOS10 dependencies go here-->
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid11.0" />
+      <frameworkAssembly assemblyName="Mono.Android" targetFramework="MonoAndroid11.0" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework="MonoAndroid11.0" />
+      <frameworkAssembly assemblyName="System" targetFramework="MonoAndroid11.0" />
+      <frameworkAssembly assemblyName="System" targetFramework="Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="System.Drawing.Common.dll" targetFramework="Xamarin.iOS1.0" />
+      <frameworkAssembly assemblyName="Xamarin.iOS" targetFramework="Xamarin.iOS1.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <!-- NuGet reference assemblies -->
+    <file src="/Users/josuemanueldiasmayorga/Projects/Xamarin/Xamarin.Facebook.Shimmer/LICENSE" target="LICENSE" />
+    <file src="/Users/josuemanueldiasmayorga/Projects/Xamarin/Xamarin.Facebook.Shimmer/icon.png" target="icon.png" />
+    <file src="/Users/josuemanueldiasmayorga/Projects/Xamarin/Xamarin.Facebook.Shimmer/README.md" target="README.md" />
+
+    <!-- iOS reference assemblies -->
+    <file src="/Users/josuemanueldiasmayorga/Projects/Xamarin/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.iOS/bin/Release/Xamarin.Facebook.Shimmer.iOS.dll" target="lib/xamarinios10/Xamarin.Facebook.Shimmer.iOS.dll" />
+    <file src="/Users/josuemanueldiasmayorga/Projects/Xamarin/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.iOS/bin/Release/Xamarin.Facebook.Shimmer.iOS.xml" target="lib/xamarinios10/Xamarin.Facebook.Shimmer.iOS.xml" />
+
+    <!-- Android reference assemblies -->
+    <file src="/Users/josuemanueldiasmayorga/Projects/Xamarin/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.Android/bin/Release/Xamarin.Facebook.Shimmer.Android.dll" target="lib/monoandroid11.0/Xamarin.Facebook.Shimmer.Android.dll" />
+    <file src="/Users/josuemanueldiasmayorga/Projects/Xamarin/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.Android/bin/Release/Xamarin.Facebook.Shimmer.Android.xml" target="lib/monoandroid11.0/Xamarin.Facebook.Shimmer.Android.xml" />    
+  </files>
+</package>
