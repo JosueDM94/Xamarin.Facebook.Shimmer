@@ -6,7 +6,7 @@ This is a set of Xamarin bindings of Facebook Shimmer for iOS and Android
 
 Shimmer is an easy way to add a shimmering effect to any view in your app. It's useful as an unobtrusive loading indicator.
 
-![Shimmer](https:/github.com/JosueDM94/Xamarin.Facebook.Shimmer/blob/master/shimmer.gif?raw=true)
+![Shimmer](https://raw.githubusercontent.com/JosueDM94/Xamarin.Facebook.Shimmer/master/shimmer.gif)
 
 ## Table of Contents ##
 
