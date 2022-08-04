@@ -25,7 +25,7 @@
     <dependencies>
       <group targetFramework="MonoAndroid11.0">
         <!--MonoAndroid dependencies go here-->
-        <dependency id="Xamarin.AndroiX.Annotation" version="1.0.2.1" />
+        <dependency id="Xamarin.AndroidX.Annotation" version="1.0.2.1" />
       </group>
       <group targetFramework="Xamarin.iOS1.0">
           <!--Xamarin.iOS10 dependencies go here-->
