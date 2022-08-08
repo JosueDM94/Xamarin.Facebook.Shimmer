@@ -1,19 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <enum-method-mappings>
-    <!--
-  This example changes the Java method:
-    android.support.v4.app.Fragment.SavedState.writeToParcel (int flags)
-  to be:
-    android.support.v4.app.Fragment.SavedState.writeToParcel (Android.OS.ParcelableWriteFlags flags)
-  when bound in C#.
-
-  <mapping jni-class="android/support/v4/app/Fragment.SavedState">
-    <method jni-name="writeToParcel" parameter="flags" clr-enum-type="Android.OS.ParcelableWriteFlags" />
-  </mapping>
-
-  Notes:
-  - For Java interfaces, use "jni-interface" attribute instead of "jni-class" attribute.
-  - To change the type of the return value, use "return" as the parameter name.
-  - The parameter names will be p0, p1, ... unless you provide JavaDoc file in the project.
-  -->
+    <mapping jni-class="com/facebook/shimmer/Shimmer.Builder">
+        <method jni-name="setAutoStart" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setBaseAlpha" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setClipToChildren" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setDirection" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setDropoff" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setDuration" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setFixedHeight" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setFixedWidth" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setHeightRatio" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setHighlightAlpha" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setIntensity" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setRepeatCount" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setRepeatDelay" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setRepeatMode" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setShape" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setTilt" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+        <method jni-name="setWidthRatio" parameter="return" clr-enum-type="Facebook.Shimmer.Shimmer.Builder"/>
+    </mapping>
 </enum-method-mappings>

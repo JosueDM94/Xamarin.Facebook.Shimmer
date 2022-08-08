@@ -6,23 +6,7 @@
     <!-- Error CS0507: 'ShimmerFrameLayout.OnLayout(bool, int, int, int, int)': cannot change access modifiers when overriding 'protected' inherited member 'FrameLayout.OnLayout(bool, int, int, int, int)' -->
     <attr path="/api/package[@name='com.facebook.shimmer']/class[@name='ShimmerFrameLayout']/method[@name='onLayout' and count(parameter)=5 and parameter[1][@type='boolean'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]"
           name="visibility">protected</attr>
-    
-    <!-- Fix generics methods-->
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setAutoStart' and count(parameter)=1 and parameter[1][@type='boolean']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setBaseAlpha' and count(parameter)=1 and parameter[1][@type='float']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setClipToChildren' and count(parameter)=1 and parameter[1][@type='boolean']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setDirection' and count(parameter)=1 and parameter[1][@type='int']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setDropoff' and count(parameter)=1 and parameter[1][@type='float']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setDuration' and count(parameter)=1 and parameter[1][@type='long']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setFixedHeight' and count(parameter)=1 and parameter[1][@type='int']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setFixedWidth' and count(parameter)=1 and parameter[1][@type='int']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setHeightRatio' and count(parameter)=1 and parameter[1][@type='float']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setHighlightAlpha' and count(parameter)=1 and parameter[1][@type='float']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setIntensity' and count(parameter)=1 and parameter[1][@type='float']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setRepeatCount' and count(parameter)=1 and parameter[1][@type='int']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setRepeatDelay' and count(parameter)=1 and parameter[1][@type='long']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setRepeatMode' and count(parameter)=1 and parameter[1][@type='int']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setShape' and count(parameter)=1 and parameter[1][@type='int']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setTilt' and count(parameter)=1 and parameter[1][@type='float']]"/>
-    <remove-node path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setWidthRatio' and count(parameter)=1 and parameter[1][@type='float']]"/>
+
+    <attr path="/api/package[@name='com.facebook.shimmer']/class[@name='Shimmer.Builder']/method[@name='setRepeatMode' and count(parameter)=1 and parameter[1][@type='int']]/parameter[1]"
+          name="type">Android.Animation.ValueAnimatorRepeatMode</attr>
 </metadata>

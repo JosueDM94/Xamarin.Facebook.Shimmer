@@ -48,10 +48,10 @@ namespace Sample.iOS
             this.View.AddSubview(_valueLabel);
 
             _shimmeringView = new FBShimmeringView();
+            _shimmeringView.Shimmering = true;
             _shimmeringView.ShimmeringBeginFadeDuration = 0.3;
             _shimmeringView.ShimmeringOpacity = 0.3f;
-            this.View.AddSubview(_shimmeringView);
-            _shimmeringView.Shimmering = true;
+            this.View.AddSubview(_shimmeringView);            
 
             _logoLabel = new UILabel(_shimmeringView.Bounds);
             _logoLabel.Text = @"Shimmer";
