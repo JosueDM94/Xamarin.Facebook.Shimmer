@@ -17,11 +17,11 @@ Shimmer is an easy way to add a shimmering effect to any view in your app. It's 
 
 ## Installation ##
 
-The latest stable release of the AffirmSDK is [available on NuGet](https://www.nuget.org/packages/Xamarin.Facebook.Shimmer).
+The latest stable release of the Facebook.Shimmer is on [available on NuGet](https://www.nuget.org/packages/Xamarin.Facebook.Shimmer).
 
 ## Example ##
 
-A demo app that integrates Affirm is included in the repo. You may clone the [GitHub repository](https://github.com/JosueDM94/Xamarin.Facebook.Shimmer) into a new Visual Studio project folder and run the Examples project.
+A demo app that integrates Facebook.Shimmer is included in the repo. You may clone the [GitHub repository](https://github.com/JosueDM94/Xamarin.Facebook.Shimmer) into a new Visual Studio project folder and run the Examples project.
 
 ## Facebook Shimmer Android ##
 
