@@ -3,17 +3,13 @@
     <TargetFramework>net8.0-android</TargetFramework>
     <IsBindingProject>true</IsBindingProject>
     <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AndroidGenerateResourceDesigner>false</AndroidGenerateResourceDesigner>
   </PropertyGroup>
 
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\shimmer-0.5.0.aar" />
-    <JavaDocJar Include="Jars\shimmer-0.5.0-javadoc.jar" />
-    <JavaSourceJar Include="Jars\shimmer-0.5.0-sources.jar" />
+    <JavaDocJar Include="Jars\shimmer-javadoc.jar" />
+    <JavaSourceJar Include="Jars\shimmer-sources.jar" />
   </ItemGroup>
 
   <ItemGroup>

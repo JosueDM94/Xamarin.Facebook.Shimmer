@@ -1,8 +1,8 @@
-﻿using System;
-using CoreAnimation;
+﻿using CoreAnimation;
 using Foundation;
 using ObjCRuntime;
 using UIKit;
+using System.Runtime.InteropServices;
 
 namespace Facebook.Shimmer
 {
@@ -94,18 +94,5 @@ namespace Facebook.Shimmer
 		// @property (nonatomic, strong) UIView * contentView;
 		[Export("contentView", ArgumentSemantic.Strong)]
 		UIView ContentView { get; set; }
-	}
-
-	[Static]
-	//[Verify(ConstantsInterfaceAssociation)]
-	partial interface Constants
-	{
-		// extern double ShimmerVersionNumber;
-		[Field("ShimmerVersionNumber", "__Internal")]
-		double ShimmerVersionNumber { get; }
-
-		// extern const unsigned char [] ShimmerVersionString;
-		[Field("ShimmerVersionString", "__Internal")]
-		IntPtr ShimmerVersionString { get; }
 	}
 }

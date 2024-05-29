@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>Xamarin.Facebook.Shimmer</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <title>Xamarin.Facebook.Shimmer</title>
     <authors>Josué Díaz</authors>
     <owners>Josué Díaz</owners>
@@ -38,11 +38,13 @@
     <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/README.md" target="README.md" />
 
     <!-- iOS reference assemblies -->
-    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.iOS/bin/Release/net8.0-ios/Xamarin.Facebook.Shimmer.iOS.dll" target="lib/net8.0-ios17.2/Xamarin.Facebook.Shimmer.iOS.dll" />
-    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.iOS/bin/Release/net8.0-ios/Xamarin.Facebook.Shimmer.iOS.xml" target="lib/net8.0-ios17.2/Xamarin.Facebook.Shimmer.iOS.xml" />
+    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.iOS/bin/Release/net8.0-ios/Xamarin.Facebook.Shimmer.iOS.dll" target="lib/net8.0-ios17.2" />
+    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.iOS/bin/Release/net8.0-ios/Xamarin.Facebook.Shimmer.iOS.xml" target="lib/net8.0-ios17.2" />
+    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.iOS/bin/Release/net8.0-ios/Xamarin.Facebook.Shimmer.iOS.resources/" target="lib/net8.0-ios17.2/Xamarin.Facebook.Shimmer.iOS.resources" />
 
     <!-- Android reference assemblies -->
-    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.Android/bin/Release/net8.0-android/Xamarin.Facebook.Shimmer.Android.dll" target="lib/net8.0-android34.0/Xamarin.Facebook.Shimmer.Android.dll" />
-    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.Android/bin/Release/net8.0-android/Xamarin.Facebook.Shimmer.Android.xml" target="lib/net8.0-android34.0/Xamarin.Facebook.Shimmer.Android.xml" />    
+    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.Android/bin/Release/net8.0-android/shimmer.aar" target="lib/net8.0-android34.0" />
+    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.Android/bin/Release/net8.0-android/Xamarin.Facebook.Shimmer.Android.dll" target="lib/net8.0-android34.0" />
+    <file src="/Users/josue/Projects/Bindings/Xamarin.Facebook.Shimmer/Bindings/Xamarin.Facebook.Shimmer.Android/bin/Release/net8.0-android/Xamarin.Facebook.Shimmer.Android.xml" target="lib/net8.0-android34.0" />
   </files>
 </package>
